@@ -1,0 +1,52 @@
+/* .calendar-container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+.container{
+    position: relative;
+}
+
+#calendar{
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+#datePicker{
+    margin-top: 129px;
+    height: 41px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#datePicker .mfp-bg-cell.mfp-selection .mfp-bg-cell-header {
+    background-color: #d4d4d4;
+}
+
+.mfp-item-vertical-detail .mfp-subject {
+    flex-shrink: 0 !important;
+}
+
+.itemClass0 .mfp-item {
+    background-color: #03738C !important;
+    color: #fff !important;
+}
+
+.itemClass1 .mfp-item {
+    background-color: #03A6A6 !important;
+    color: #fff !important;
+}
+
+.itemClass2 .mfp-item {
+    background-color: #F28241 !important;
+    color: #fff !important;
+}
+
+.itemClass3 .mfp-item {
+    background-color: #64803B !important;
+    color: #fff !important;
+}

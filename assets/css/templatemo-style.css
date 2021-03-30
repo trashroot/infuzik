@@ -118,22 +118,70 @@ html {
     cursor: pointer;
 }
 
-.header-contact span:hover{
+.header-contact span:hover {
     background-color: #754040;
     color: #FFFFFF;
 }
 
-.header-contact>a {
+.fa-caret-down{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul li:last-child a:hover{
+    color: #463c3c;    
+    /* background-color: #FFFFFF; */
+}
+
+nav > ul{
+    position: relative;
+}
+
+nav > ul > li{
+    display: inline;
+    position: relative;
+    margin-left: 15px;
+}
+
+nav > ul > li > a, nav > ul > li > ul > li > a{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav > ul> li > ul{
+    display: none;
+    margin-top: -5px;
+}
+
+nav > ul > li > ul > li{
+    display: block;
+    list-style: none;    
+}
+
+nav > ul > li:last-child:hover > ul, nav > ul > li > ul:hover {
+    display: block;
+    /* color: #714031c4; */
+}
+
+.fa-phone {
+    margin-right: 7px;
+}
+
+/* .header-contact>a {
     text-decoration: none;
     color: #FFFFFF;
     margin: 0 10px;
-}
+} */
 
 .header-contact>a>i {
     margin: 0 5px;
 }
-
-
 
 .main-nav {
     text-align: center;
@@ -745,6 +793,8 @@ section.contact-me {
 
 .map {
     width: 48%;
+    height: 40vh;
+    margin-bottom: 20px;
     /* border: 1px solid; */
 }
 

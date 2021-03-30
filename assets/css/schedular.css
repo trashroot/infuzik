@@ -1,52 +1,95 @@
-/* .calendar-container{
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-} */
-
-.container{
-    position: relative;
+.section {
+    width: 65%;
+    right: unset;
+    min-height: unset;
+    padding-bottom: unset;
+    border-bottom: unset;
+    font-family: Arial, sans-serif;
 }
 
-#calendar{
-    position: absolute;
-    height: 100%; 
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid #000;
+.section-heading {
+    padding: 50px 0;
 }
 
-#datePicker{
-    margin-top: 129px;
-    height: 41px;
+#myc-nav-container{
+    padding: 5px 0;
+} 
+
+#myc-nav-container, 
+#myc-dates-container {
+    background-color: #714031c4;
+}
+
+.info-container{
+    text-align: left;
+    background-color: #b9aeaecc;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #463c3c;
+}
+
+.info{
     display: inline-block;
-    margin-bottom: 10px;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    margin-right: 5px;
 }
 
-#datePicker .mfp-bg-cell.mfp-selection .mfp-bg-cell-header {
-    background-color: #d4d4d4;
+.info.available{
+    background-color: #bf5d37d6;
 }
 
-.mfp-item-vertical-detail .mfp-subject {
-    flex-shrink: 0 !important;
+.info.booked{
+    background-color: #463c3c;
 }
 
-.itemClass0 .mfp-item {
-    background-color: #03738C !important;
-    color: #fff !important;
+@media only screen and (max-width: 1068px){
+    .section{
+        width: 70%;
+    }
+
+    .myc-date-header{
+        padding: 10px 0px 10px 10px;
+        width: 13%;
+    }
+
+    .myc-day-time-container:first-of-type {
+        padding-left: unset;
+    }
+
+    .myc-day-time-container {        
+        display: inline-block;
+        height: 100%;
+        padding: 10px;
+        vertical-align: top;
+        width: 13%;
+    }    
 }
 
-.itemClass1 .mfp-item {
-    background-color: #03A6A6 !important;
-    color: #fff !important;
-}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: unset;
+    }
 
-.itemClass2 .mfp-item {
-    background-color: #F28241 !important;
-    color: #fff !important;
-}
+    #myc-nav-container{
+        margin-bottom: unset;
+    }
 
-.itemClass3 .mfp-item {
-    background-color: #64803B !important;
-    color: #fff !important;
+    #myc-prev-week-container{
+        width: 10%;
+    }
+
+    .myc-day-time-container,
+    .myc-date-header {
+        padding: unset;
+        font-size: 15px;
+        width: 13%;
+    }
+
+    .myc-date-header:first-of-type,
+    .myc-day-time-container:first-of-type {
+        padding: unset;
+    }
 }

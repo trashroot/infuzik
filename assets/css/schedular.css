@@ -11,6 +11,22 @@
     padding: 50px 0;
 }
 
+.section-heading h2{
+    display: inline-block;
+}
+
+.section-heading span{
+    margin: 0 0 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-heading select{
+    width: 100px;
+    height: 25px;
+    border: 1px solid #fff;
+}
+
 #myc-nav-container{
     padding: 5px 0;
 } 
@@ -91,5 +107,13 @@
     .myc-date-header:first-of-type,
     .myc-day-time-container:first-of-type {
         padding: unset;
+    }
+
+    .section-heading h2{
+        display: block;
+    }
+
+    .section-heading select{
+        margin-bottom: 15px;
     }
 }

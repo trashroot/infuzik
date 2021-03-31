@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="manifest" href="/manifest.json">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 
   <title>Infuzick Guitar Classes</title>
@@ -385,6 +387,17 @@
       checkSection();
     });
   </script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			console.log("Registering service worker...");
+			navigator.serviceWorker.register('service-worker.js')
+			.then(function(reg){
+				console.log("service worker registered.");
+			}).catch(function(err) {
+				console.log("service worker registeration error:", err)
+			});
+		}
+	</script>
 </body>
 
 </html>
